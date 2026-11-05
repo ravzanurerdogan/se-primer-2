@@ -8,7 +8,7 @@ Kişiye uyum sağlayan, karar tabanlı bir yazılım mühendisliği simülasyonu
 |---|---|
 | Çalışan uygulama (telefonda açılır, giriş gerektirmez) | https://se-primer-2.ai.studio |
 | Demo video (Cypress E2E koşusu) | https://youtu.be/2DtxfUhy__o |
-| GitHub repo | Bu sayfa |
+| Canlı Uygulama Linki | (https://youtu.be/gHA01zqwt7I) |
 
 ## Repo içeriği ve ödev karşılığı
 
