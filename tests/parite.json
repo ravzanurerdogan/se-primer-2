@@ -1,0 +1,103 @@
+{
+  "tolerans": 0.0001,
+  "ozellik_sirasi": [
+    "seviye",
+    "rol_backend",
+    "rol_mobil",
+    "rol_qa",
+    "karar_no",
+    "onceki_yanlis_sayisi",
+    "onceki_karar_suresi_sn",
+    "onceki_inceleme_sayisi",
+    "alert_incelendi",
+    "gecen_dk",
+    "ipucu_sayisi"
+  ],
+  "vakalar": [
+    {
+      "ad": "K1 yeni başladım, backend",
+      "girdi": {
+        "seviye": 0,
+        "rol_backend": 1,
+        "rol_mobil": 0,
+        "rol_qa": 0,
+        "karar_no": 1,
+        "onceki_yanlis_sayisi": 0,
+        "onceki_karar_suresi_sn": 0,
+        "onceki_inceleme_sayisi": 0,
+        "alert_incelendi": 0,
+        "gecen_dk": 0,
+        "ipucu_sayisi": 0
+      },
+      "p": 0.03594806790351868
+    },
+    {
+      "ad": "K2 deneyimli, K1'de B seçti",
+      "girdi": {
+        "seviye": 1,
+        "rol_backend": 0,
+        "rol_mobil": 1,
+        "rol_qa": 0,
+        "karar_no": 2,
+        "onceki_yanlis_sayisi": 1,
+        "onceki_karar_suresi_sn": 8,
+        "onceki_inceleme_sayisi": 3,
+        "alert_incelendi": 1,
+        "gecen_dk": 18,
+        "ipucu_sayisi": 0
+      },
+      "p": 0.363506555557251
+    },
+    {
+      "ad": "K2 deneyimli, K1'de A seçti",
+      "girdi": {
+        "seviye": 1,
+        "rol_backend": 1,
+        "rol_mobil": 0,
+        "rol_qa": 0,
+        "karar_no": 2,
+        "onceki_yanlis_sayisi": 0,
+        "onceki_karar_suresi_sn": 3,
+        "onceki_inceleme_sayisi": 0,
+        "alert_incelendi": 0,
+        "gecen_dk": 5,
+        "ipucu_sayisi": 0
+      },
+      "p": 0.06969240307807922
+    },
+    {
+      "ad": "K3 aykırı süre (196 sn -> 60'a kırp)",
+      "girdi": {
+        "seviye": 0,
+        "rol_backend": 0,
+        "rol_mobil": 1,
+        "rol_qa": 0,
+        "karar_no": 3,
+        "onceki_yanlis_sayisi": 1,
+        "onceki_karar_suresi_sn": 196,
+        "onceki_inceleme_sayisi": 0,
+        "alert_incelendi": 0,
+        "gecen_dk": 9,
+        "ipucu_sayisi": 3
+      },
+      "p": 0.418282151222229
+    },
+    {
+      "ad": "K3 QA, alert incelenmiş",
+      "girdi": {
+        "seviye": 0,
+        "rol_backend": 0,
+        "rol_mobil": 0,
+        "rol_qa": 1,
+        "karar_no": 3,
+        "onceki_yanlis_sayisi": 1,
+        "onceki_karar_suresi_sn": 2,
+        "onceki_inceleme_sayisi": 3,
+        "alert_incelendi": 1,
+        "gecen_dk": 15,
+        "ipucu_sayisi": 0
+      },
+      "p": 0.16397219896316528
+    }
+  ]
+}

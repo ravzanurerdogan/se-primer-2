@@ -1,0 +1,69 @@
+{
+  "model_adi": "primer-yanlis-secim-riski",
+  "surum": "v2.0",
+  "gorev": "Karar ekranı açılırken yanlış seçenek (B) seçme olasılığı",
+  "ozellikler": [
+    "seviye",
+    "rol_backend",
+    "rol_mobil",
+    "rol_qa",
+    "karar_no",
+    "onceki_yanlis_sayisi",
+    "onceki_karar_suresi_sn",
+    "onceki_inceleme_sayisi",
+    "alert_incelendi",
+    "gecen_dk",
+    "ipucu_sayisi"
+  ],
+  "ozellik_sayisi": 11,
+  "on_isleme": {
+    "kirp": {
+      "onceki_karar_suresi_sn": [
+        0.0,
+        60.0
+      ]
+    },
+    "not": "Ölçekleme (StandardScaler) ONNX'in içindedir, istemcide ayrıca ölçekleme YAPILMAZ."
+  },
+  "onnx": {
+    "giris_adi": "X",
+    "giris_tipi": "float32",
+    "giris_sekli": [
+      null,
+      11
+    ],
+    "cikis_adlari": [
+      "label",
+      "probabilities"
+    ],
+    "olasilik_cikisi": "probabilities",
+    "pozitif_sinif_indeksi": 1
+  },
+  "siniflar": {
+    "0": "doğru seçim (A)",
+    "1": "yanlış seçim (B) veya süre doldu"
+  },
+  "karar_esigi": 0.35,
+  "kabul_esigi": {
+    "metrik": "roc_auc",
+    "deger": 0.65
+  },
+  "metrikler": {
+    "roc_auc_groupkfold5": 0.6917,
+    "auc_bootstrap_95": [
+      0.4967,
+      0.8716
+    ],
+    "onnx_sklearn_maks_fark": 5.960464477539063e-08,
+    "n_satir": 57,
+    "n_oturum": 19,
+    "n_pozitif": 11
+  },
+  "egitim": {
+    "random_state": 42,
+    "algoritma": "StandardScaler + LogisticRegression(C=0.3)",
+    "sklearn": "1.9.1",
+    "skl2onnx": "1.20.0",
+    "onnxruntime": "1.31.0"
+  }
+}
